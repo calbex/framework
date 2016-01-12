@@ -17,7 +17,7 @@ get_header(); ?>
 					if ( is_home() && ! is_front_page() ) : ?>
 						<header class="page-header">
 							<h1 class="page-title"><?php single_post_title(); ?></h1>
-						</header>
+						</header><!-- .page-header -->
 					<?php
 					endif;
 

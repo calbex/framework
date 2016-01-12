@@ -14,7 +14,7 @@ get_header(); ?>
 						<header class="page-header">
 							<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
 							<?php the_archive_description( '<p class="page-description">', '</p>' ); ?>
-						</header>
+						</header><!-- .page-header -->
 
 					<?php
 					// Start the loop.
