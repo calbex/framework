@@ -1,0 +1,627 @@
+/*!
+ * Theme Name: Framework
+ * Theme URI: http://dev.hoverthemes.com
+ * Author: Hover Themes
+ * Author URI: http://www.hoverthemes.com
+ * Description: A kick-ass theme framework.
+ * Version: 1
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain: framework
+ */
+/**
+ * Table of Contents
+ *
+ * 1.0 - Normalize
+ * 2.0 - Structure
+ * 3.0 - Typography
+ * 4.0 - Lists
+ * 5.0 - Images
+ * 6.0 - Tables
+ * 7.0 - Forms
+ * 8.0 - Alignment
+ */
+/**
+ * 1.0 - Normalize
+ */
+html {
+  font-family: sans-serif;
+  ms-text-size-adjust: 100%;
+  webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  webkit-appearance: button;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  box-sizing: content-box;
+  webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/**
+ * 2.0 - Structure
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#container {
+  max-width: 42rem;
+  padding: 5rem 1rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #0077d9;
+}
+
+a:hover, a:focus {
+  color: #005ba6;
+}
+
+.screen-reader-text {
+  display: none;
+}
+
+/**
+ * 3.0 Typography
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 1.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin: 0 0 1.5rem;
+}
+
+blockquote {
+  margin: 1.5rem;
+}
+
+pre {
+  padding: 1.5rem;
+  margin: 0 0 1.5rem;
+  font-family: monospace;
+  font-size: 0.85rem;
+  background: #f4f4f4;
+}
+
+address {
+  margin: 0 0 1.5rem;
+  font-style: normal;
+}
+
+hr {
+  margin: 3rem 0;
+  border: 0;
+  border-top: solid 2px #eee;
+}
+
+/**
+ * 4.0 - Lists
+ */
+ul,
+ol {
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin: 0;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+dl {
+  margin: 0 0 1.5rem;
+}
+
+dl dt {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+dl dd {
+  margin-bottom: 1rem;
+}
+
+/**
+ * 5.0 - Images
+ */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  max-width: 100%;
+  margin: 1.5rem;
+}
+
+figcaption {
+  font-size: 0.85rem;
+}
+
+/**
+ * 6.0 - Tables
+ */
+table {
+  width: 100%;
+  margin: 0 0 1.5rem;
+}
+
+table tr:nth-of-type(even), table thead {
+  background: #f4f4f4;
+}
+
+table th,
+table td {
+  padding: 1rem;
+}
+
+table th {
+  font-weight: 500;
+  text-align: left;
+}
+
+/**
+ * 7.0 - Forms
+ */
+input,
+textarea,
+select {
+  appearance: none;
+  width: 100%;
+  padding: 0.9rem 1rem;
+  background: #eee;
+  border: solid 1px #eee;
+  box-sizing: border-box !important;
+  transition: background 300ms ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 0;
+  background: #fff;
+}
+
+input[type="submit"] {
+  padding: 0.9rem 1.5rem;
+  color: #fff;
+  background: #222;
+  border-color: #222;
+  border-radius: 3px;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus {
+  background: #3c3c3c;
+}
+
+/**
+ * 8.0 - Alignment
+ */
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignleft {
+  float: left;
+  margin: 0.5rem 1.5rem 1.5rem 0;
+}
+
+.alignright {
+  float: right;
+  margin: 0.5rem 0 1.5rem 1.5rem;
+}
+
+/**
+ * #.# - Header
+ */
+#header {
+  text-align: center;
+}
+
+.site-title {
+  font-size: 3rem;
+  line-height: 1.4;
+  color: #222;
+}
+
+.site-title:hover, .site-title:focus {
+  color: #222;
+}
+
+.site-tagline {
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/**
+ * #.# - Primary nav
+ */
+#primary-nav {
+  text-align: center;
+}
+
+#primary-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#primary-nav ul li {
+  display: inline-block;
+  margin: 0 0.75rem;
+}
+
+#primary-nav a {
+  color: #999;
+}
+
+#primary-nav a:hover, #primary-nav a:focus {
+  color: #222;
+}
+
+/**
+ * #.# - Content
+ */
+#content {
+  padding: 3rem 0;
+}
+
+/**
+ * #.# - Footer
+ */
+#footer {
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/**
+ * #.# - Blog post
+ */
+.post {
+  margin-bottom: 1.5rem;
+}
+
+.sticky {
+  padding: 1.5rem;
+  background: #eee;
+}
+
+/**
+ * #.# - Widgets
+ */
+#widget-area {
+  display: none;
+  margin: 0 0 3rem;
+}
+
+#widget-area::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.page-id-23 #widget-area {
+  display: block;
+}
+
+.widget {
+  max-width: 32rem;
+  margin: 1.5rem auto;
+}
+
+.widget_search form {
+  display: table;
+}
+
+.widget_search form label,
+.widget_search form input {
+  display: table-cell;
+}
+
+.widget_search form label {
+  width: 100%;
+}
+
+.widget_search form input[type="search"] {
+  width: 95%;
+}
+
+/**
+ * #.# Galleries
+ */
+.gallery {
+  margin: 1.5rem 0;
+}
+
+.gallery-item {
+  width: 100%;
+  display: inline-block;
+  padding: 0 2% 2%;
+  margin: 0;
+  vertical-align: top;
+  text-align: center;
+}
+
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+  max-width: 33.3333%;
+}
+
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}

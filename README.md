@@ -1,2 +1,2 @@
-# framework
+# Framework
 WordPress Theme Framework
